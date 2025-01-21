@@ -1,0 +1,73 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+}
+
+/* Header styling */
+.header {
+    background-color: #34495e;
+    padding: 15px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Styling for the Housify link */
+.dropdown-toggle {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the dropdown button */
+.dropdown-toggle:hover {
+    background-color: #16a085;
+}
+
+/* Dropdown menu styles */
+.submenu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 60px; /* Adjusted to create space below Housify */
+    left: 0;
+    background-color: #2c3e50;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Dropdown item styling */
+.submenu li a {
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown items */
+.submenu li a:hover {
+    background-color: #16a085;
+}
+
+/* Show menu when the dropdown is active */
+.show-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
